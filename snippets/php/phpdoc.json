@@ -3,7 +3,7 @@
         "prefix": "/**",
         "body": [
             "/**",
-            " * brief ${1:A one-line summay.}",
+            " * ${1:A one-line summay.}",
             " *",
             " * ${2:Description.}$0",
             " *",
