@@ -1,13 +1,36 @@
 {
-    "comment simple": {
+    "comment": {
         "prefix": "\"\"\"",
         "body": [
             "\"\"\"",
-            "${1:A one-line summary.}$0",
+            "${1:A one-line summay.}",
+            "",
+            "${2:Detailed description.}$0",
+            "",
+            "Args:",
+            "    ${4:argument_name}: ${5:type and description.}",
+            "",
+            "Returns:",
+            "    ${3:type and description of the returned object.}",
+            "",
+            "Example:",
+            "    # ${6:Description of my example.}",
+            "    ${7:use_it_this_way(arg1, arg2)}",
             "\"\"\""
         ],
-        "description": "A simple Python docstring comment. Useful when you prefer to add the docstrings manually."
+        "description": "A Python docstring for functions and methods, including short summary, details, args, returns, and examples. This docstring is an synonism of \"\"\"function."
     },
+    "comment simple": {
+        "prefix": "\"\"",
+        "body": [
+            "\"\"\"",
+            "${1:A one-line summay.}",
+            "",
+            "${2:Detailed description.}$0",
+            "\"\"\""
+        ],
+        "description": "A simple Python docstring comment. Useful when you prefer to add the docstrings manually on functions."
+    },    
     "module docstring": {
         "prefix": "\"\"\"module",
         "body": [
@@ -21,7 +44,7 @@
             "    ${4:use_it_this_way(arg1, arg2)}",
             "\"\"\""
         ],
-        "description": "A Python docstring for modules, including a one-line summary, details, and examples."
+        "description": "A Python docstring for modules, including a one-line summary, details, and example."
     },
     "test module docstring": {
         "prefix": "\"\"\"test",
@@ -48,12 +71,12 @@
             "Returns:",
             "    ${3:type and description of the returned object.}",
             "",
-            "Examples:",
+            "Example:",
             "    # ${6:Description of my example.}",
             "    ${7:use_it_this_way(arg1, arg2)}",
             "\"\"\""
         ],
-        "description": "A Python docstring for functions and methods, including short summary, details, args, returns, and examples."
+        "description": "A Python docstring for functions and methods, including short summary, details, args, returns, and example."
     },
     "function docstring typed": {
         "prefix": "\"\"\"function_typed",
@@ -69,7 +92,7 @@
             "Returns:",
             "    ${3:type}: {4:Description of the returned object.}",
             "",
-            "Examples:",
+            "Example:",
             "    # ${8:Description of my example.}",
             "    ${9:use_it_this_way(arg1, arg2)}",
             "\"\"\""
@@ -90,7 +113,7 @@
             "Yields:",
             "    ${3:type and description of the yielded object.}",
             "",
-            "Examples:",
+            "Example:",
             "    # ${6:Description of my example.}",
             "    ${7:use_it_this_way(arg1, arg2)}",
             "\"\"\""
